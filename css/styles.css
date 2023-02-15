@@ -1,0 +1,41 @@
+.top li a{
+    color:rgb(0, 0, 0) !important;
+}
+.bottom li a{
+    color:rgb(0, 0, 0) !important;
+}
+.navbar-brand img{
+    margin-left: 80px;
+}
+.topnav li button {
+    color:rgb(0, 0, 0) !important;
+    margin-right: 50px;
+}
+.topnav li i {
+    font-family: 'Zeyada', cursive;
+}
+.navbar .nav-item {
+    position: relative;
+} 
+.navbar{
+    padding: 0;
+}
+.navbar .nav .nav-link{
+    padding: 1em;
+}
+.navbar .nav-item::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: green;
+    width: 0;
+    height: 4px;
+} 
+.navbar .nav-item:hover:after{
+   width: 100%; 
+}
+.container-fluid .row .col-md-6{
+    background-image: url('assets/img/groceries.jpg');
+}
