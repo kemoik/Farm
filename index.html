@@ -65,12 +65,13 @@
                       <button type="button"data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="btn btn-success">SIGN UP</button>
                       <form>
                         <div class="input-group  mb-3">
+                          
                           <span class="input-group-text" id="basic-addon1">@</span>
-                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
                         <div class="input-group  mb-3">
                           <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
-                          <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                          <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" required>
                         </div>
 
                         <div class="mb-3 form-check">
@@ -108,33 +109,53 @@
                       <button type="button"data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="btn btn-success">SIGN UP</button>
                       <form>
                         <div class="input-group  mb-3">
+                          <label for="validationCustomUsername" class="form-label"></label>
                           <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-                          <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                          <input type="email"   id="validationCustomUsername"class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required>
+                          <div class="invalid-feedback">
+                            Please Enter your email.
+                          </div>
                         </div>
                         <div class="container-fluid">
                           <div class="row">
                             <div class="col-md-4 ">
                               <div class="input-group  mb-3">
+                                <label for="validationCustom01" class="form-label"></label>
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-                                  <input type="text" class="form-control" placeholder="FirstName" aria-label="Username" aria-describedby="basic-addon1">
+                                  <input type="text" id="validationCustom01"  class="form-control" placeholder="FirstName" aria-label="Username" aria-describedby="basic-addon1" required>
+                                  <div class="invalid-feedback">
+                                    Please Enter your name.
+                                  </div>
                                 </div>
                             </div>
                             <div class="col-md-4 ">
                               <div class="input-group  mb-3">
+                                <label for="validationCustom02" class="form-label"></label>
                                   <span class="input-group-text" id="basic-addon1">@</span>
-                                  <input type="text" class="form-control" placeholder="LastName" aria-label="Username" aria-describedby="basic-addon1">
+                                  <input type="text"  id="validationCustom02" class="form-control" placeholder="LastName" aria-label="Username" aria-describedby="basic-addon1" required>
+                                  <div class="invalid-feedback">
+                                    Please Enter your name.
+                                  </div>
                                 </div>
                             </div>
                           </div>
                       </div>
                         <div class="input-group  mb-3">
+                          <label for="validationCustom03" class="form-label"></label>
                           <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
-                          <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                          <input type="password"  id="validationCustom03" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" required>
+                          <div class="invalid-feedback">
+                            Please Enter a valid password.
+                          </div>
                         </div>
                         <div class="input-group  mb-3">
+                          <label for="validationCustom04" class="form-label"></label>
                           <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
-                          <input type="password" class="form-control" placeholder=" Confirm Password" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
+                          <input type="password"  id="validationCustom04"class="form-control" placeholder=" Confirm Password" aria-label="Username" aria-describedby="basic-addon1" required>
+                          <div class="invalid-feedback">
+                            Passwords dont match.
+                          </div>
+                         </div>
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Remember me</label>
@@ -153,28 +174,90 @@
       <nav class="bottom">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Dairy</a>
+              <a class="nav-link active" aria-current="page" href="#">DAIRY</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Meat</a>
+                <a class="nav-link" href="#">MEAT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Fruits/Veg</a>
+                <a class="nav-link" href="#">FRUITS/VEG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Plant Based</a>
+                <a class="nav-link" href="#">PLANT BASED</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sale</a>
+              <a class="nav-link" href="#">SALE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">New</a>
+              <a class="nav-link" href="#">NEW</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Products</a>
+              <a class="nav-link disabled">PRODUCTS</a>
             </li>
           </ul>
       </nav>
+      <!-- marketplaceBody -->
+      <div class="sellers">
+        <div class="container ">
+          <div class="shopHeader">
+          <div class="row">
+            <div class="col-2">
+              <h5>TOP SELLERS</h5>
+            </div>
+            <div class="col-8">
+              <p>See what everyone is loving</p>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/milk.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Milk</h5>
+                <p class="card-text">Bio Milk -2L</p>
+                <p class="card-text">KSH 250</p>
+                <button  class="btn btn-light" style="color:green; " type="button" >ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/peppers.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bell Peppers</h5>
+                <p class="card-text">Selina Wamucii Green Bell Peppers</p>
+                <p class="card-text">KSH 100/kg</p>
+                <button  class="btn btn-light" style="color:green; " type="button" >ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/tomatoes.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tomatoes</h5>
+                <p class="card-text">Mark Karanja Nyota F1 Tomatoes</p>
+                <p class="card-text">KSH 120/kg</p>
+                <button  class="btn btn-light" style="color:green; " type="button" >ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/eggs.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Eggs</h5>
+                <p class="card-text">Jenico Poultry Farm eggs</p>
+                <p class="card-text">KSH 350/tray</p>
+                <button  class="btn btn-light" style="color:green; " type="button" >ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

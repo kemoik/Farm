@@ -2,7 +2,17 @@
     color:rgb(0, 0, 0) !important;
 }
 .bottom li a{
-    color:rgb(0, 0, 0) !important;
+    color:rgb(255, 255, 255) !important;
+}
+.bottom {
+    background: green;
+}
+.shopHeader {
+    margin-left: 80px;
+}
+.shopHeader p {
+    font-family: 'Zeyada', cursive;
+    font-size: 25px; 
 }
 .navbar-brand img{
     margin-left: 80px;
@@ -38,4 +48,7 @@
 }
 .container-fluid .row .col-md-6{
     background-image: url('assets/img/groceries.jpg');
+}
+.sellers {
+    margin-top: 100px;
 }
