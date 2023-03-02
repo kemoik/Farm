@@ -52,3 +52,47 @@
 .sellers {
     margin-top: 100px;
 }
+.form-inputs{
+    position:relative;
+}
+.form-inputs .form-control{
+    height:45px; 
+}
+
+.form-inputs .form-control:focus{
+    box-shadow:none;
+    border:1px solid #000;
+}
+
+.form-inputs i{
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+
+.shop-bag{
+    background-color:green;
+    color:#fff;
+    height:50px;
+    width:50px;
+    font-size:25px;
+    display:flex;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+}
+
+.qty {
+    font-size:12px;
+}
+ .increase {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    background-color: green;
+    color: honeydew;
+}
+.box{
+    display: inline-block;
+}
+ 

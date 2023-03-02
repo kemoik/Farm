@@ -10,8 +10,8 @@
             "driver": "MySQL",
             "name": "test",
             "database": "farm",
-            "username": "root",
-            "password": "1721kemoi"
+            "username": "sqluser",
+            "password": "password"
         }
     ]
 }
