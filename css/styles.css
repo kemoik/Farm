@@ -2,17 +2,39 @@
     color:rgb(0, 0, 0) !important;
 }
 .bottom li a{
-    color:rgb(255, 255, 255) !important;
+    color:rgb(255, 255, 255) 
 }
+#logout{
+    color: #000;
+}
+.col-megamenu li a {
+    color:rgb(0, 0, 0) !important;
+}
+.bottom .megamenu{ padding: 1rem; }
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	
+	.bottom .has-megamenu{position:static!important;}
+	.bottom .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+	
+}
+.carousel {
+   margin-left: 80px; 
+   margin-right: 80px;
+}	
 .bottom {
     background: green;
 }
 .shopHeader {
     margin-left: 80px;
+    margin-top: 50px;
 }
 .shopHeader p {
-    font-family: 'Zeyada', cursive;
+    font-family: 'Kaushan Script', cursive;
     font-size: 25px; 
+}
+.phrase{
+    font-family: 'Kaushan Script', cursive;
 }
 .navbar-brand img{
     margin-left: 80px;
@@ -22,7 +44,8 @@
     margin-right: 50px;
 }
 .topnav li i {
-    font-family: 'Zeyada', cursive;
+    font-family: 'Kaushan Script', cursive;
+    margin-right: 50px;
 }
 .navbar .nav-item {
     position: relative;
@@ -45,6 +68,19 @@
 } 
 .navbar .nav-item:hover:after{
    width: 100%; 
+}
+.bottom .nav-link {
+    color: rgb(252, 252, 252);
+}
+
+.bottom .nav-item>a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/*code to change background color*/
+.bottom>.active>a {
+    background-color: #C0C0C0;
+    color: green;
 }
 .container-fluid .row .col-md-6{
     background-image: url('assets/img/groceries.jpg');
@@ -86,13 +122,47 @@
     font-size:12px;
 }
  .increase {
-    width: 30px;
+    width: 40px;
     height: 30px;
     font-size: 10px;
     background-color: green;
     color: honeydew;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+    margin-right: 3px;
+}
+.decrease {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    background-color: green;
+    color: honeydew;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 12px; 
+    margin-left: 3px;
+}
+.increase span {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
 }
 .box{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box input {
+    width: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.footer{
+    margin-top: 50px;
+    background-color: #f0f5f0;
 }
  

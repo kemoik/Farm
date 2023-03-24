@@ -1,4 +1,17 @@
+<?php
+  session_start();
+  if (isset($_SESSION["user_id"])){
 
+    $mysqli = require __DIR__."/connect.php";
+
+    $sql = "SELECT *FROM customers WHERE id ={$_SESSION["user_id"]}";
+
+    $result = $mysqli->query($sql);
+
+    $user = $result ->fetch_assoc();
+  }
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,10 +54,16 @@
         <div class="topnav">
             <ul class=" nav justify-content-end">
                 <li class="nav-item">
-                  <i class="bi bi-person-fill-add"style="font-size: 1.5rem; color: black;">Hello Guest</i>
+                  <?php if (isset($user)):?>
+                  <i class="bi bi-person-fill-add"style="font-size: 1.5rem; color: black;">Hello <?= htmlspecialchars($user["firstname"]) ?> </i>
+                  <a href="logout.php">
+                  <button type="button" class="btn nav-link">LOGOUT</button>
+                  </a>
+                  <?php else: ?>
                   <a href="login.php">
                     <button type="button" class="btn nav-link">LOGIN/SIGNUP</button>
                   </a>
+                  <?php endif; ?>
                 </li>
               </ul>
         </div>
