@@ -11,10 +11,6 @@
 				. $mysqli->connect_error);
 	}
 	return $mysqli;
-	// // Database connection
-	// if(!$conn = new mysqli($host,$username,$password,$dbname,3307))
-	// {
-	// 	die("failed to connect");
-	// }
+
 
 	?>
